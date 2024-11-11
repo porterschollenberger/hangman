@@ -17,22 +17,19 @@ def main():
     while True:
         guessed_letter = input("Please guess a letter: ").lower()
 
-        # Clear the screen after each guess to make the game look more readable
-        os.system('clear' if os.name == "posix" else 'cls')
-
         # Make sure the user only guesses one letter
         if len(guessed_letter) > 1:
-            print("Hang on now! You can only guess one letter at a time!")
+            print("Hang on now! You can only guess one letter at a time!\n")
             continue
         elif not guessed_letter.isalpha():
-            print("Oops! That isn't a letter! Try that one again!")
+            print("Oops! That isn't a letter! Try that one again!\n")
             continue
         elif guessed_letter in guessed: # Don't let the user guess the same thing multiple times
             print(f"You have already guessed the letter {guessed_letter}.\n")
-            print(''.join(running_guess))
-            print("Incorrect letters:", ' '.join(sorted(incorrect_guesses)))
-            print(f"Your guesses: {correct_count+incorrect_count} total, {correct_count} correct, {incorrect_count} incorrect.\n\n")
             continue
+
+        # Clear the screen after each guess to make the game look more readable
+        os.system('clear' if os.name == "posix" else 'cls')
 
         # See if letter was correct
         if guessed_letter in selected_word:
@@ -82,7 +79,7 @@ def main():
                 correct_count = 0
                 incorrect_count = 0
                 incorrect_guesses = []
-                guessed = []
+                guessed = set()
 
                 print("Welcome to Hangman!")
                 print(f"The word you will be guessing has {len(selected_word)} letters\n")
