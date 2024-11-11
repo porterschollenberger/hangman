@@ -61,7 +61,6 @@ def main():
             print(f"Congratulations! You've guessed the word {selected_word} in {correct_count+incorrect_count} guesses!\n")
             
             # Get a valid response from the user
-            response = ""
             while True:
                 response = input("Would you like to keep playing? [Yes/Quit] ").lower()
                 if response == "yes" or response == "quit":
