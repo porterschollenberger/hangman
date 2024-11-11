@@ -84,8 +84,6 @@ def main():
                 print("Welcome to Hangman!")
                 print(f"The word you will be guessing has {len(selected_word)} letters\n")
 
-                continue             
-
 
 if __name__ == "__main__":
     main()
