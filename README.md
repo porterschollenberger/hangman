@@ -7,6 +7,6 @@ This code is all original and uses two python libraries, those being ```random``
 
 Please feel free to take a look at the source code to make sense of the process I took in creating this game. There you will find comments explaining most of the blocks of code I used!
 
-The instructions given to me played a large part into the overall structure of the game, but I still took advantage of the freedoms I had to make the game look and feel like my own. I ensured everything was readable to my standards and that nothing was missing from the gameplay perspective. I ensured there was good error handling so the user doesn't get caught in a situation they didn't want to be in.
+The instructions given to me played a large part into the overall structure of the game, but I still took advantage of the freedoms I had to make the game look and feel like my own. I ensured everything was readable to my standards and that nothing was missing from the gameplay perspective. I took extra steps to create good error handling so the user doesn't get caught in a situation they didn't want to be in.
 
 I spent just about 2 hours creating this project and had a lot of fun while doing so! Thanks for taking the time to check out my game!
